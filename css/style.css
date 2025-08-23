@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    background: fixed;
+    background-color: #84B067;
+    height: 66px;
+}
+
+header * {
+    color: beige;
+    align-self: center;
+    align-items: center;
+}
+
+header .logo {
+    float: left;
+    height: inherit; /* get from header*/
+    /* border: 1px solid whitesmoke; */
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 9px;
+}
+header .logo-text span {
+    color: #D93682; /*Haute Couture*/
+}
+header ul {
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    list-style: none;
+    height: inherit;
+    /* border: 1px solid whitesmoke; */
+    position: relative;
+}
+
+header ul li {
+    float: left;
+    height: inherit;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    height: inherit;
+    background: #D93682;
+    transition: 0.5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+/* Material Symbols styling */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    vertical-align: middle;
+    margin-right: 9px;
+}
