@@ -1,0 +1,61 @@
+[
+  {
+    "position": 1,
+    "title": "AI bubble fears",
+    "stories": [
+      {
+        "position": 1,
+        "title": "A Better Way to Think About AI",
+        "source": {
+          "name": "The Atlantic",
+          "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.theatlantic.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://www.theatlantic.com/technology/archive/2025/08/ai-job-loss-human-enhancement-google/683963/",
+        "thumbnail": "https://cdn.theatlantic.com/thumbor/c9C_22STtuiS9NGko_6hafRIBIk=/0x0:2160x2700/648x810/media/img/2025/08/23/notext1/original.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVphMnRDT0ZCU1MwRlBhVmRIVFJEckJCanZBeWdLTWdhRk5KWU1xZ2s",
+        "date": "08/24/2025, 11:00 AM, +0000 UTC"
+      }
+    ],
+    "topic_token": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lZdGZXWER4RVBBVlZoTm8xbG15Z0FQAQ",
+    "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lZdGZXWER4RVBBVlZoTm8xbG15Z0FQAQ"
+  },
+  {
+    "position": 2,
+    "title": "YouTube secretly used AI to edit people's videos. The results could bend reality",
+    "source": {
+      "name": "BBC",
+      "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "authors": ["Thomas Germain"]
+    },
+    "link": "https://www.bbc.com/future/article/20250822-youtube-is-using-ai-to-edit-videos-without-permission",
+    "thumbnail": "https://ichef.bbci.co.uk/images/ic/480xn/p0lyhvrk.jpg.webp",
+    "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVhSVEEyTTBZM04wYzBiMjAwVFJDT0FoamdBeWdLTWdhcGdveXVzUVk",
+    "date": "08/24/2025, 10:00 AM, +0000 UTC"
+  },
+  {
+    "position": 3,
+    "title": "AI-led job interviews are increasing. Here are 10 tips for applicants.",
+    "source": {
+      "name": "Yahoo Finance",
+      "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://finance.yahoo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "authors": ["Kerry Hannon"]
+    },
+    "link": "https://finance.yahoo.com/news/ai-led-job-interviews-are-increasing-here-are-10-tips-for-applicants-180459987.html",
+    "thumbnail": "https://s.yimg.com/ny/api/res/1.2/4t0HukRCS4d_NEDzOj1qSw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-09/6d884b40-54d5-11ee-bf6f-b28a0a4ee2d2",
+    "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVBWRXhzVFVsM2RUQnJNa1JaVFJERUF4aW1CU2dLTWdZVkE0NnJFUVk",
+    "date": "08/24/2025, 06:06 PM, +0000 UTC"
+  },
+  {
+    "position": 4,
+    "title": "Colon cancer may be missed as doctors rely on AI, alarming study warns",
+    "source": {
+      "name": "Fox News",
+      "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.foxnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+      "authors": ["Angelica Stabile"]
+    },
+    "link": "https://www.foxnews.com/health/colon-cancer-may-missed-doctors-rely-ai-alarming-study-warns",
+    "thumbnail": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2025/08/720/1280/doctor-reading-colonoscopy.jpg?ve=1&tl=1",
+    "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDJNa1JaYTFsdFZYTlZUVXRLVFJEakJSaWZBeWdLTWdZQmtKU3BPQWM",
+    "date": "08/21/2025, 02:52 PM, +0000 UTC"
+  }
+]
