@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking News</title>
+    <link rel="stylesheet" href="/css/breaking-style.css">
+</head>
+<body>
+    <div class="topHeadlines">
+        <div class="left">
+            <div class="title">
+                <h2>Técnicas basadas en una especificación</h2>
+            </div>
+            <div class="title">Pruebas de caja negra</div>
+            <div class="img" id="breakingImg">
+                <img src="/assets/Frieren.jpg" alt="On X @isainstars 'debugging code before going to an anime convention'" id="breakingNewsImg">
+            </div>
+            <div class="text" id="breakingNews">
+                
+                <h5>¿Qué es la partición equivalente?</h5>
+                <div class="description">
+                   Es una técnica de pruebas que se utiliza para identificar y reducir el número de casos de prueba necesarios, dividiendo el espacio de entrada en particiones o clases equivalentes.
+                </br>
+                </br>
+                Dependiendo del tipo de entrada y su comportamiento esperado se asocian a un grupo donde se comparten un efecto semejante en el sistema.
+                </div>
+                </br>
+                <h5>¿Cómo se divide los datos en la partición equivalente?</h5>
+                <div class="description">
+                   Esta técnica divide los datos de entrada en dos campos: entradas <b>válidas</b> e <b>inválidas</b>.
+                   En otras palabras:
+                   <ol>
+                       <li>Si la condición de un valor de la partición A es verdadera, también deben serlo los demás valores de la partición A.</li>
+                       <li>Del mismo modo, si las condiciones de un valor de la partición B son falsas, los demás valores de la partición B también deben ser falsos.</li>
+                   </ol>
+                   <br>
+                   Una vez conocemos las clases válidas e inválidas, utilizamos las pautas para obtener los casos de prueba (entrada y salida):
+                   <br>
+                   <br>
+                   <ol>
+                       <li> Rango de Valores: Si una condición de entrada especifica un rango de valores, por ejemplo, entre 1 y 99 donde cualquier número mayor a 99 o menor a 1 será una clase inválida:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>1</mn>
+                                <mo>&lt;</mo>
+                                <mi>n</mi>
+                                <mo>&lt;</mo>
+                                <mn>99</mn>
+                            </math>
+                        </li>
+                       <li>Número de valores: Si alguna condición requiere la especificación del número de valores.</li>
+                       <li>Conjunto de valores: En caso de utilizar valores específicos como los ingresados en estructuras “enum” cualquier otro valor ingresado sería inválidos.</li>
+                    </ol>
+                    </br>
+                    Por último, las pautas para clasificar varían de acuerdo con las necesidades en caso de ser necesario las clases y grupos pueden subdividirse aún más.
+                </div>
+                </br>
+                </br>
+                <h5>Ejemplo práctico</h5>
+                <div class="description">
+                    Supongamos que tenemos un programa que se encarga de calcular el precio final de un producto considerando descuentos y costos de envío según el tipo de transporte.
+                    <br>
+                    <br>
+                    <table border="1" cellpadding="5" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Variable</th>
+                                <th>Clase de equivalencia</th>
+                                <th>Estado</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Precio Total</td>
+                                <td>Válida</td>
+                                <td>Correcto</td>
+                                <td>Total > 100</td>
+                            </tr>
+                            <tr>
+                                <td>Precio Total</td>
+                                <td>Inválida</td>
+                                <td>Incorrecto</td>
+                                <td>Total < 0</td>
+                            </tr>
+                            <tr>
+                                <td>Precio Total</td>
+                                <td>Inválida</td>
+                                <td>Incorrecto</td>
+                                <td>Valor no numérico</td>
+                            </tr>
+                            <tr>
+                                <td>Descuento</td>
+                                <td>Válida</td>
+                                <td>Correcto</td>
+                                <td>0 ≤ descuento ≤ 10</td>
+                            </tr>
+                            <tr>
+                                <td>Descuento</td>
+                                <td>Inválida</td>
+                                <td>Incorrecto</td>
+                                <td>Descuento < 0 o Descuento > 10</td>
+                            </tr>
+                            <tr>
+                                <td>Transporte Envío</td>
+                                <td>Válida</td>
+                                <td>Correcto</td>
+                                <td>Camión = 8, Avión = 14</td>
+                            </tr>
+                            <tr>
+                                <td>Transporte Envío</td>
+                                <td>Inválida</td>
+                                <td>Incorrecto</td>
+                                <td>Códigos diferentes a 8 o 14</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Container for the right section -->
+        <div class="right">
+            <div class="title">
+                <h2>Top Headlines</h2>
+            </div>
+            <div class="topNews">
+                <div class="news" id="news-1">
+                    <div class="img" id="news-1-img"></div>
+                    <div class="text" id="news-1-text">
+                        <div class="title">
+                            Lorem ipsum dolor
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+                        </div>
+                    </div>
+                </div>
+                <div class="news" id="news-2">
+                    <div class="img" id="news-2-img"></div>
+                    <div class="text" id="news-2-text">
+                        <div class="title">
+                            Lorem ipsum dolor
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+                        </div>
+                    </div>
+                </div>
+                <div class="news" id="news-3">
+                    <div class="img" id="news-3-img"></div>
+                    <div class="text" id="news-3-text">
+                        <div class="title">
+                            Lorem ipsum dolor
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Quisquam, quod. Quisquam, quod.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
