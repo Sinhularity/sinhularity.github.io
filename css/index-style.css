@@ -5,7 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{
+body {
     background-color: #25252a;
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
@@ -192,6 +192,17 @@ body{
     .header-main .logo a {
         gap: 8px;
     }
+
+    /* Responsive Footer */
+     .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    
+    .citation {
+        font-size: 0.8em;
+    }
 }
 
 .iframe-container {
@@ -199,4 +210,56 @@ body{
     height: 100vh;
     border: none;
     overflow: hidden;
+}
+
+/* Footer Styles */
+.footer-main {
+    background-color: #1a1a1f;
+    color: #fff;
+    padding: 30px 20px 20px;
+    border-top: 2px solid #5e86d6;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.sources-section h3 {
+    color: #5e86d6;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.apa-citations {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.citation {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #ccc;
+    margin: 0;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.citation a {
+    color: #5e86d6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.citation a:hover {
+    color: #b9ebde;
+    text-decoration: underline;
 }
