@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "dotenv": "^17.2.1",
-    "newsapi": "^2.4.1"
-  }
-}

@@ -1,126 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coding 701</title>
 
-    <!-- Google Font-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding 701</title>
+
+  <!-- Google Font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&
     icon_names=
     home_max,
     menu,
     newspaper,
-    person_book"
-    />
+    person_book" />
 
-    <link rel="stylesheet" href="css/index-style.css" />
-  </head>
-  <body>
-    <div class="mobile-menu-btn">
-      <span class="material-symbols-outlined">menu</span>
+  <link rel="stylesheet" href="css/index-style.css" />
+</head>
+
+<body>
+  <div class="mobile-menu-btn">
+    <span class="material-symbols-outlined">menu</span>
+  </div>
+
+  <header class="header-main">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo" />
+        <h1 class="logo-text"><span>Coding</span> 701</h1>
+      </a>
     </div>
 
-    <header class="header-main">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">
-          <img src="assets/logo.png" alt="Logo" />
-          <h1 class="logo-text"><span>Coding</span> 701</h1>
-        </a>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul class="nav-header">
+        <li>
+          <a href="https://github.com/Sinhularity/sinhularity.github.io" target="_blank">
+            <span class="material-symbols-outlined">home_max</span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="https://sinhularity.github.io/minimalist-portfolio-json/" target="_blank">
+            <span class="material-symbols-outlined">person_book</span>
+            About me
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/search?q=artificial+intelligence&sca_esv=d4c3277b19e45af9&rlz=1C1CHZN_enMX1042MX1042&biw=868&bih=498&tbm=nws&sxsrf=AE3TifOMljy1m0A1TCbQXgEiAhHN7wDMzQ%3A1756069411114&ei=I36raMjdBqn1kPIPhKCyUA&oq=Artifici&gs_lp=Egxnd3Mtd2l6LW5ld3MiCEFydGlmaWNpKgIIADINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUiyF1DZBViCEHAAeACQAQCYAWGgAb4GqgEBObgBA8gBAPgBAZgCCaAC4QbCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICBBAAGAOYAwCIBgGSBwM3LjKgB6YxsgcDNy4yuAfhBsIHBTAuNC41yAce&sclient=gws-wiz-news"
+            target="_blank">
+            <span class="material-symbols-outlined">newspaper</span>
+            More news</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- Breaking News -->
+  <div class="topHeadlines">
+    <div class="left">
+      <div class="title">
+        <h2>Técnicas basadas en una especificación</h2>
       </div>
-
-      <!-- Navigation Menu -->
-      <nav>
-        <ul class="nav-header">
-          <li>
-            <a
-              href="https://github.com/Sinhularity/sinhularity.github.io"
-              target="_blank"
-            >
-              <span class="material-symbols-outlined">home_max</span>
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://sinhularity.github.io/minimalist-portfolio-json/"
-              target="_blank"
-            >
-              <span class="material-symbols-outlined">person_book</span>
-              About me
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.google.com/search?q=artificial+intelligence&sca_esv=d4c3277b19e45af9&rlz=1C1CHZN_enMX1042MX1042&biw=868&bih=498&tbm=nws&sxsrf=AE3TifOMljy1m0A1TCbQXgEiAhHN7wDMzQ%3A1756069411114&ei=I36raMjdBqn1kPIPhKCyUA&oq=Artifici&gs_lp=Egxnd3Mtd2l6LW5ld3MiCEFydGlmaWNpKgIIADINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTIIEAAYgAQYsQMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUiyF1DZBViCEHAAeACQAQCYAWGgAb4GqgEBObgBA8gBAPgBAZgCCaAC4QbCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICBBAAGAOYAwCIBgGSBwM3LjKgB6YxsgcDNy4yuAfhBsIHBTAuNC41yAce&sclient=gws-wiz-news"
-              target="_blank"
-            >
-              <span class="material-symbols-outlined">newspaper</span>
-              More news</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Mobile functions -->
-    <script>
-      // Mobile menu toggle functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-        const header = document.querySelector(".header-main");
-
-        mobileMenuBtn.addEventListener("click", function () {
-          header.classList.toggle("mobile-active");
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener("click", function (event) {
-          if (
-            !header.contains(event.target) &&
-            !mobileMenuBtn.contains(event.target)
-          ) {
-            header.classList.remove("mobile-active");
-          }
-        });
-      });
-    </script>
-
-    <!-- Breaking News html -->
-    <iframe
-      class="iframe-container"
-      src="/pages/breaking-news.html"
-      id="breakingNewsFrame"
-    ></iframe>
-
-    <!-- Footer -->
-    <footer class="footer-main">
-      <div class="footer-content">
-        <div class="sources-section">
-          <h3>Fuentes de información</h3>
-          <div class="apa-citations">
-            <p class="citation">
-              Saxena, A. (s/f). <em> Equivalence partitioning: Step-by-step process for efficient test.</em> Recuperado el 8 de
-              noviembre de 2024, de
-              <a href="https://testsigma.com/blog/equivalence-partitioning/" target="_blank">Testsigma.com</a>
-            </p>
-            <p class="citation">
-              Singureanu, C. (s/f-b).<em> Partición por equivalencia: proceso, enfoques, herramientas y más</em>.
-              Recuperado el 8 de noviembre
-              de 2024, de
-              <a href="https://www.zaptest.com/es/particionamiento-de-equivalencia-en-pruebas-de-software-que-es-tipos-proceso-enfoques-herramientas-y-mas"
-              target="_blank">https://www.zaptest.com</a>
-            </p>
-            <p class="citation">
-              Terrera, G. (2022, noviembre 9). <em>ISTQB CTFL v3.1. Cap 4 - Partición de Equivalencia - Parte I. TestingBaires</em>.
-              <a href="https://testingbaires.com/istqb-ctfl-v3-1-cap-4-particion-de-equivalencia-parte-i/" target="_blank">https://testingbaires.com</a>
-            </p>
-          </div>
+      <div class="title">Pruebas de caja negra</div>
+      <div class="img" id="breakingImg">
+        <img src="/assets/Frieren.jpg" alt="On X @isainstars 'debugging code before going to an anime convention'"
+          id="breakingNewsImg">
+      </div>
+      <div class="text" id="breakingNews">
+        <h3>¿Qué es la partición equivalente?</h3>
+        <div class="description">
+          <p>
+            La partición equivalente es una <strong>técnica de diseño de casos de prueba</strong> que divide el conjunto
+            de datos de entrada en clases de datos equivalentes.
+            El objetivo es reducir el número total de casos de prueba necesarios al seleccionar un representante de cada
+            clase, asumiendo que todos los valores dentro de una clase se comportan de manera similar.
+          </p>
+          <br>
+        </div>
+        <h3>¿Cómo se divide los datos en la partición equivalente?</h3>
+        <div class="description">
+          <p>
+            Esta técnica divide los datos de entrada en dos campos: entradas <b>válidas</b> e <b>inválidas</b>.
+            En otras palabras:
+          <ol>
+            <li>Si la condición de un valor de la partición A es verdadera, también deben serlo los demás valores de la
+              partición A.</li>
+            <li>Del mismo modo, si las condiciones de un valor de la partición B son falsas, los demás valores de la
+              partición B también deben ser falsos.</li>
+          </ol>
+          </p>
+          <br>
+          <p>
+            Una vez conocemos las clases válidas e inválidas, utilizamos las pautas para obtener los casos de prueba
+            (entrada y salida):
+          </p>
+          <br>
+          <ol>
+            <li> Rango de Valores: Si una condición de entrada especifica un rango de valores, por ejemplo, entre 1 y 99
+              donde cualquier número mayor a 99 o menor a 1 será una clase inválida.
+              <div style="text-align: center;">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                  <mn>1</mn>
+                  <mo>&lt;</mo>
+                  <mi>n</mi>
+                  <mo>&lt;</mo>
+                  <mn>99</mn>
+                </math>
+              </div>
+            </li>
+            <li>Número de valores: Si alguna condición requiere la especificación del número de valores.</li>
+            <li>Conjunto de valores: En caso de utilizar valores específicos como los ingresados en estructuras “enum”
+              cualquier otro valor ingresado sería inválidos.</li>
+          </ol>
+          </br>
+          <p>
+            <em>
+              Las pautas para clasificar varían de acuerdo con las necesidades en caso de ser necesario las clases y
+              grupos pueden subdividirse aún más.
+            </em>
+          </p>
+        </div>
+        <br>
+        <h3>Ejemplo práctico</h3>
+        <div class="description">
+          <p>
+            Supongamos que tenemos un programa que se encarga de calcular el precio final de un producto considerando
+            descuentos y costos de envío según el tipo de transporte.
+          </p>
+          <br>
+          <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+              <th>Variable</th>
+              <th>Clase de equivalencia</th>
+              <th>Estado</th>
+              <th>Valor</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Precio Total</td>
+                <td>Válida</td>
+                <td>Correcto</td>
+                <td>Total > 100</td>
+              </tr>
+              <tr>
+                <td>Precio Total</td>
+                <td>Inválida</td>
+                <td>Incorrecto</td>
+                <td>Total < 0</td>
+              </tr>
+              <tr>
+                <td>Precio Total</td>
+                <td>Inválida</td>
+                <td>Incorrecto</td>
+                <td>Valor no numérico</td>
+              </tr>
+              <tr>
+                <td>Descuento</td>
+                <td>Válida</td>
+                <td>Correcto</td>
+                <td>0 ≤ descuento ≤ 10</td>
+              </tr>
+              <tr>
+                <td>Descuento</td>
+                <td>Inválida</td>
+                <td>Incorrecto</td>
+                <td>Descuento < 0 o Descuento> 10</td>
+              </tr>
+              <tr>
+                <td>Transporte Envío</td>
+                <td>Válida</td>
+                <td>Correcto</td>
+                <td>Camión = 8, Avión = 14</td>
+              </tr>
+              <tr>
+                <td>Transporte Envío</td>
+                <td>Inválida</td>
+                <td>Incorrecto</td>
+                <td>Códigos diferentes a 8 o 14</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </footer>
-  </body>
+      <br>
+      <div class="text" id="breakingNews-2">
+        <h3>¿Qué es el análisis de valores de la frontera?</h3>
+        <div class="description">
+          <p>
+            Al igual que la técnica anterior se trata de un tipo de prueba de caja negra. El análisis de valores a la
+            frontera,
+            también conocido como valores límites, es utilizado principalmente para detectar cualquier comportamiento
+            incorrecto
+            sobre el sistema. La prueba consiste como su nombre lo indica en las “fronteras” límites que garantizan que
+            el
+            software funcione correctamente.
+          </p>
+        </div>
+        <br>
+
+        <h3>¿Cómo se aplican los valores en pruebas?</h3>
+        <div class="description">
+          <p>
+            Es común que los programadores cometan errores entorno a los límites, por ejemplo, al calcular los años.
+            Cuando se
+            utilizan condiciones como igual que (=), mayor que (>), menor que (<) o cuántas veces se debe ejecutar un
+              bucle. </p>
+              <br>
+              <p>Los pasos para aplicar este procedimiento son:</p>
+              <ol>
+                <li>Primero es identificar los casos de prueba -> Identificar las particiones de equivalencia:
+                  particiones válidas
+                  e inválidas.</li>
+                <li>Después detectamos los límites de cada una de las particiones. Supongamos que tenemos un programa
+                  que solicita
+                  la creación de una contraseña, pero esta deberá tener entre 8 hasta 16 caracteres. Podemos decir que
+                  los límites
+                  de partición válidos son 8 &lt;= Contraseña &lt;= 16 y a partir de ellos podemos comenzar a trabajar.
+                </li>
+                <li>Una vez tenemos definido los límites y las particiones, comenzamos con algunas variables como: un
+                  valor
+                  nominal, un valor mínimo, uno por debajo del mínimo, uno por debajo del máximo, el valor máximo (valor
+                  límite).
+                </li>
+              </ol>
+        </div>
+        <br>
+        <h3>Ejemplo práctico</h3>
+        <div class="description">
+          <p>
+            Tomando uno de los ejemplos de clase supongamos que tenemos una aplicación que tiene como objetivo medir la
+            temperatura y dependiendo del intervalo en la temperatura este muestra un mensaje.
+          </p>
+          <p>Fragmento del código:</p>
+        </div>
+        <pre><code>
+                        for (int temp : arrTemperaturas) {
+                            if (temp < 30 || temp > 45) {
+                                throw new RuntimeException("EL VALOR " + temp + " NO ES CORRECTO");
+                            }
+                        }
+              
+                        // Más código
+              
+                        // Checamos el valor de la temperatura promedio
+                        if (tempPromedio < 36.5) {
+                            return "Hipotermia";
+                        } else if (tempPromedio > 36.5 && tempPromedio <= 37.4) {
+                            return "Normal";
+                        } else if (tempPromedio >= 37.5 && tempPromedio <= 39.9) {
+                            return "Hipertermia";
+                        } else {
+                            return "Hiperpirexia";
+              }
+        </code></pre>
+        <div class="temperature-table-container">
+          <img src="\assets\Valoresfrontera.png" alt="Tabla de temperaturas" class="temperature-table-img">
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Container for the right section -->
+    <div class="right">
+      <div class="title">
+        <h2>Cargando noticias...</h2>
+      </div>
+      <div class="topNews">
+        <!-- News articles will be dynamically loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/breaking-news.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="footer-content">
+      <div class="sources-section">
+        <h3>Fuentes de información</h3>
+        <div class="apa-citations">
+          <p class="citation">
+            Saxena, A. (s/f). <em> Equivalence partitioning: Step-by-step process for efficient test.</em> Recuperado el
+            8 de
+            noviembre de 2024, de
+            <a href="https://testsigma.com/blog/equivalence-partitioning/" target="_blank">Testsigma.com</a>
+          </p>
+          <p class="citation">
+            Singureanu, C. (s/f-b).<em> Partición por equivalencia: proceso, enfoques, herramientas y más</em>.
+            Recuperado el 8 de noviembre
+            de 2024, de
+            <a href="https://www.zaptest.com/es/particionamiento-de-equivalencia-en-pruebas-de-software-que-es-tipos-proceso-enfoques-herramientas-y-mas"
+              target="_blank">https://www.zaptest.com</a>
+          </p>
+          <p class="citation">
+            Terrera, G. (2022, noviembre 9). <em>ISTQB CTFL v3.1. Cap 4 - Partición de Equivalencia - Parte I.
+              TestingBaires</em>.
+            <a href="https://testingbaires.com/istqb-ctfl-v3-1-cap-4-particion-de-equivalencia-parte-i/"
+              target="_blank">https://testingbaires.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile functions -->
+  <script>
+    // Mobile menu toggle functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const header = document.querySelector(".header-main");
+
+      mobileMenuBtn.addEventListener("click", function () {
+        header.classList.toggle("mobile-active");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        if (
+          !header.contains(event.target) &&
+          !mobileMenuBtn.contains(event.target)
+        ) {
+          header.classList.remove("mobile-active");
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
