@@ -255,12 +255,13 @@
           // Checamos el valor de la temperatura promedio
           if (tempPromedio < 36.5) { 
             return "Hipotermia" ; 
-          } 
-            else if (tempPromedio> 36.5 && tempPromedio <= 37.4) {
-                 return "Normal" ; 
-            } else if (tempPromedio>= 37.5 && tempPromedio <= 39.9) { return "Hipertermia" ; } else {
+          } else if (tempPromedio> 36.5 && tempPromedio <= 37.4) {
+            return "Normal" ; 
+          } else if (tempPromedio>= 37.5 && tempPromedio <= 39.9) { 
+            return "Hipertermia" ; 
+          } else {
               return "Hiperpirexia" ; 
-            }
+          }
             </code></pre>
           </div>
 
@@ -349,5 +350,4 @@
     });
   </script>
 </body>
-
 </html>

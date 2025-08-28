@@ -106,178 +106,7 @@ body {
     font-size: 40px;
 }
 
-/* Medium screen responsive design */
-@media only screen and (min-width: 1300px) {
-    .main-content {
-        grid-template-columns: 2fr 1fr;
-        gap: 25px;
-        padding: 90px 30px 40px;
-    }
 
-    .sidebar {
-        position: relative;
-        padding: 10px 15px;
-    }
-}
-
-/* Responsive Design */
-@media only screen and (max-width: 900px) {
-    .mobile-menu-btn {
-        display: flex;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 200;
-        background-color: rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-    }
-
-    .mobile-menu-btn .material-symbols-outlined {
-        color: white;
-        font-size: 4rem;
-    }
-
-    /* Hide navigation on mobile */
-    .header-main nav {
-    overflow-wrap: anywhere;
-    word-break: normal;
-        display: none;
-        position: fixed;
-        top: 60px;
-        right: 0;
-        width: 250px;
-        background-color: #5e86d6;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-        height: calc(100vh - 60px);
-        z-index: 150;
-    }
-
-    /* Show navigation when mobile menu is active */
-    .header-main.mobile-active nav {
-        display: block;
-    /* Hide any stray horizontal overflow from children */
-    overflow-x: hidden;
-    }
-
-    .header-main nav ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .header-main nav ul li {
-        margin: 0;
-        width: 100%;
-    }
-
-    .header-main nav ul li a {
-        width: 100%;
-        padding: 15px 20px;
-        border-radius: 0;
-        justify-content: flex-start;
-    }
-
-    .header-main nav ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    /* Adjust header padding on mobile */
-    .header-main {
-        padding: 0 10px;
-    }
-
-    /* Adjust logo on mobile */
-    .header-main .logo .logo-text {
-        font-size: 1em;
-    }
-
-    .header-main .logo a {
-        gap: 8px;
-    }
-
-    /* Main Content Mobile Layout */
-    .main-content {
-        grid-template-columns: 1fr; /* collapse to one column */
-        max-width: none; 
-        width: 100%;
-    }
-    .main-article {
-        padding: 10px 15px;
-        max-width: none;
-        width: 100%;
-        order: 1;
-        grid-column: 1 / -1; /* span full width */
-    }
-
-    .article-header h1 {
-        font-size: 12rem;
-    }
-
-    .article-subtitle {
-        font-size: 18px;
-    }
-
-    .section-title {
-        font-size: 20px;
-    }
-
-    .subsection-title {
-        font-size: 18px;
-    }
-
-    .section-content {
-        font-size: 14px;
-    }
-
-    .sidebar {
-        grid-column: 1 / -1;
-        grid-row: 2;
-    }
-
-    /* Responsive Footer */
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .citation {
-        font-size: 0.8em;
-        
-    }
-
-    /* Code Container Mobile */
-    .code-container pre {
-        padding: 15px;
-        font-size: 12px;
-    }
-
-    /* Table Mobile */
-    .data-table {
-        font-size: 12px;
-    }
-
-    .data-table th,
-    .data-table td {
-        padding: 8px 10px;
-    }
-
-    /* Image Container Mobile */
-    .image-container {
-        margin: 15px 0;
-        padding: 10px;
-    }
-
-    .content-image {
-        border-width: 2px;
-        padding: 8px;
-    }
-
-    
-
-}
 
 
 
@@ -292,7 +121,6 @@ body {
     grid-template-rows: auto;
     gap: 30px;
     align-items: start;
-    min-height: calc(100vh - 160px);
 }
 
 /* Article Styles */
@@ -543,8 +371,6 @@ body {
     color: #b9ebde;
 }
 
-
-
 /* Temperature Table Image Styling */
 .temperature-table-container {
     display: flex;
@@ -567,7 +393,6 @@ body {
     padding: 10px;
 }
 
-
 /* Footer Styles */
 .footer-main {
     background-color: #1a1a1f;
@@ -583,7 +408,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 30px;
     align-items: start;
 }
@@ -594,6 +418,7 @@ body {
     margin-bottom: 15px;
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
+    width: 100%;
 }
 
 .apa-citations {
@@ -620,4 +445,153 @@ body {
 .citation a:hover {
     color: #b9ebde;
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 200;
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .mobile-menu-btn .material-symbols-outlined {
+        color: white;
+        font-size: 4rem;
+    }
+
+    /* Hide navigation on mobile */
+    .header-main nav {
+    overflow-wrap: anywhere;
+    word-break: normal;
+        display: none;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background-color: #5e86d6;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        height: calc(100vh - 60px);
+        z-index: 150;
+    }
+
+    /* Show navigation when mobile menu is active */
+    .header-main.mobile-active nav {
+        display: block;
+    /* Hide any stray horizontal overflow from children */
+    overflow-x: hidden;
+    }
+
+    .header-main nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .header-main nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .header-main nav ul li a {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+
+    .header-main nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Adjust header padding on mobile */
+    .header-main {
+        padding: 0 10px;
+    }
+
+    /* Adjust logo on mobile */
+    .header-main .logo .logo-text {
+        font-size: 1em;
+    }
+
+    .header-main .logo a {
+        gap: 8px;
+    }
+
+    /* Main Content Mobile Layout */
+    .main-content {
+        grid-template-columns: 1fr;
+        padding: 80px 20px 20px;
+    }
+
+    .main-article {
+        width: 100%;
+        order: 1;
+        grid-column: 1 / -1; /* span full width */
+    }
+
+    .article-subtitle {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .subsection-title {
+        font-size: 18px;
+    }
+
+    .section-content {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    /* Responsive Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .citation {
+        font-size: 0.8em;
+    }
+
+    /* Code Container Mobile */
+    .code-container pre {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    /* Table Mobile */
+    .data-table {
+        font-size: 12px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 10px;
+    }
+
+    /* Image Container Mobile */
+    .image-container {
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    .content-image {
+        border-width: 2px;
+        padding: 8px;
+    }
 }
