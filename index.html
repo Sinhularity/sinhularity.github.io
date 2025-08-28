@@ -58,50 +58,51 @@
 
 
 
-  <!-- Breaking News -->
-  <div class="topHeadlines">
-    <div class="left">
-      <div class="title">
-        <h2>Técnicas basadas en una especificación</h2>
+  <!-- Main Content -->
+  <main class="main-content">
+    <article class="main-article">
+      <header class="article-header">
+        <h1>Técnicas basadas en una especificación</h1>
+        <h2 class="article-subtitle">Pruebas de caja negra</h2>
+      </header>
+
+      <div class="hero-image">
+        <img src="/assets/Frieren.jpg" alt="Ilustración sobre debugging y programación" class="hero-img">
       </div>
-      <div class="title">Pruebas de caja negra</div>
-      <div class="img" id="breakingImg">
-        <img src="/assets/Frieren.jpg" alt="On X @isainstars 'debugging code before going to an anime convention'"
-          id="breakingNewsImg">
-      </div>
-      <div class="text" id="breakingNews">
-        <h3>¿Qué es la partición equivalente?</h3>
-        <div class="description">
+
+      <section class="article-section" id="particion-equivalente">
+        <h3 class="section-title">¿Qué es la partición equivalente?</h3>
+        <div class="section-content">
           <p>
             La partición equivalente es una <strong>técnica de diseño de casos de prueba</strong> que divide el conjunto
             de datos de entrada en clases de datos equivalentes.
             El objetivo es reducir el número total de casos de prueba necesarios al seleccionar un representante de cada
             clase, asumiendo que todos los valores dentro de una clase se comportan de manera similar.
           </p>
-          <br>
         </div>
-        <h3>¿Cómo se divide los datos en la partición equivalente?</h3>
-        <div class="description">
+
+        <h4 class="subsection-title">¿Cómo se divide los datos en la partición equivalente?</h4>
+        <div class="section-content">
           <p>
             Esta técnica divide los datos de entrada en dos campos: entradas <b>válidas</b> e <b>inválidas</b>.
             En otras palabras:
-          <ol>
+          </p>
+          <ol class="content-list">
             <li>Si la condición de un valor de la partición A es verdadera, también deben serlo los demás valores de la
               partición A.</li>
             <li>Del mismo modo, si las condiciones de un valor de la partición B son falsas, los demás valores de la
               partición B también deben ser falsos.</li>
           </ol>
-          </p>
-          <br>
+
           <p>
             Una vez conocemos las clases válidas e inválidas, utilizamos las pautas para obtener los casos de prueba
             (entrada y salida):
           </p>
-          <br>
-          <ol>
+
+          <ol class="content-list">
             <li> Rango de Valores: Si una condición de entrada especifica un rango de valores, por ejemplo, entre 1 y 99
               donde cualquier número mayor a 99 o menor a 1 será una clase inválida.
-              <div style="text-align: center;">
+              <div class="formula-container">
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                   <mn>1</mn>
                   <mo>&lt;</mo>
@@ -115,80 +116,84 @@
             <li>Conjunto de valores: En caso de utilizar valores específicos como los ingresados en estructuras “enum”
               cualquier otro valor ingresado sería inválidos.</li>
           </ol>
-          </br>
-          <p>
+
+          <p class="note">
             <em>
               Las pautas para clasificar varían de acuerdo con las necesidades en caso de ser necesario las clases y
               grupos pueden subdividirse aún más.
             </em>
           </p>
         </div>
-        <br>
-        <h3>Ejemplo práctico</h3>
-        <div class="description">
+
+        <h4 class="subsection-title">Ejemplo práctico</h4>
+        <div class="section-content">
           <p>
             Supongamos que tenemos un programa que se encarga de calcular el precio final de un producto considerando
             descuentos y costos de envío según el tipo de transporte.
           </p>
-          <br>
-          <table border="1" cellpadding="5" cellspacing="0">
-            <thead>
-              <th>Variable</th>
-              <th>Clase de equivalencia</th>
-              <th>Estado</th>
-              <th>Valor</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Precio Total</td>
-                <td>Válida</td>
-                <td>Correcto</td>
-                <td>Total > 100</td>
-              </tr>
-              <tr>
-                <td>Precio Total</td>
-                <td>Inválida</td>
-                <td>Incorrecto</td>
-                <td>Total < 0</td>
-              </tr>
-              <tr>
-                <td>Precio Total</td>
-                <td>Inválida</td>
-                <td>Incorrecto</td>
-                <td>Valor no numérico</td>
-              </tr>
-              <tr>
-                <td>Descuento</td>
-                <td>Válida</td>
-                <td>Correcto</td>
-                <td>0 ≤ descuento ≤ 10</td>
-              </tr>
-              <tr>
-                <td>Descuento</td>
-                <td>Inválida</td>
-                <td>Incorrecto</td>
-                <td>Descuento < 0 o Descuento> 10</td>
-              </tr>
-              <tr>
-                <td>Transporte Envío</td>
-                <td>Válida</td>
-                <td>Correcto</td>
-                <td>Camión = 8, Avión = 14</td>
-              </tr>
-              <tr>
-                <td>Transporte Envío</td>
-                <td>Inválida</td>
-                <td>Incorrecto</td>
-                <td>Códigos diferentes a 8 o 14</td>
-              </tr>
-            </tbody>
-          </table>
+
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Clase de equivalencia</th>
+                  <th>Estado</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Precio Total</td>
+                  <td>Válida</td>
+                  <td>Correcto</td>
+                  <td>Total > 100</td>
+                </tr>
+                <tr>
+                  <td>Precio Total</td>
+                  <td>Inválida</td>
+                  <td>Incorrecto</td>
+                  <td>Total < 0</td>
+                </tr>
+                <tr>
+                  <td>Precio Total</td>
+                  <td>Inválida</td>
+                  <td>Incorrecto</td>
+                  <td>Valor no numérico</td>
+                </tr>
+                <tr>
+                  <td>Descuento</td>
+                  <td>Válida</td>
+                  <td>Correcto</td>
+                  <td>0 ≤ descuento ≤ 10</td>
+                </tr>
+                <tr>
+                  <td>Descuento</td>
+                  <td>Inválida</td>
+                  <td>Incorrecto</td>
+                  <td>Descuento < 0 o Descuento> 10</td>
+                </tr>
+                <tr>
+                  <td>Transporte Envío</td>
+                  <td>Válida</td>
+                  <td>Correcto</td>
+                  <td>Camión = 8, Avión = 14</td>
+                </tr>
+                <tr>
+                  <td>Transporte Envío</td>
+                  <td>Inválida</td>
+                  <td>Incorrecto</td>
+                  <td>Códigos diferentes a 8 o 14</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <br>
-      <div class="text" id="breakingNews-2">
-        <h3>¿Qué es el análisis de valores de la frontera?</h3>
-        <div class="description">
+      </section>
+
+      <section class="article-section" id="valores-frontera">
+        <h3 class="section-title">¿Qué es el análisis de valores de la frontera?</h3>
+        <div class="section-content">
           <p>
             Al igual que la técnica anterior se trata de un tipo de prueba de caja negra. El análisis de valores a la
             frontera,
@@ -199,18 +204,19 @@
             software funcione correctamente.
           </p>
         </div>
-        <br>
 
-        <h3>¿Cómo se aplican los valores en pruebas?</h3>
-        <div class="description">
+        <div class="subsection-title">
+          <h3>¿Cómo se aplican los valores en pruebas?</h3>
+        </div>
+        <div class="section-content">
           <p>
             Es común que los programadores cometan errores entorno a los límites, por ejemplo, al calcular los años.
             Cuando se
             utilizan condiciones como igual que (=), mayor que (>), menor que (<) o cuántas veces se debe ejecutar un
               bucle. </p>
-              <br>
+
               <p>Los pasos para aplicar este procedimiento son:</p>
-              <ol>
+              <ol class="content-list">
                 <li>Primero es identificar los casos de prueba -> Identificar las particiones de equivalencia:
                   particiones válidas
                   e inválidas.</li>
@@ -227,56 +233,57 @@
                 </li>
               </ol>
         </div>
-        <br>
-        <h3>Ejemplo práctico</h3>
-        <div class="description">
+
+        <h4 class="subsection-title">Ejemplo práctico</h4>
+        <div class="section-content">
           <p>
             Tomando uno de los ejemplos de clase supongamos que tenemos una aplicación que tiene como objetivo medir la
             temperatura y dependiendo del intervalo en la temperatura este muestra un mensaje.
           </p>
           <p>Fragmento del código:</p>
+
+          <div class="code-container">
+            <pre><code>
+            for (int temp : arrTemperaturas) {
+              if (temp < 30 || temp> 45) {
+                throw new RuntimeException("EL VALOR " + temp + " NO ES CORRECTO");
+                }
+            }
+            
+          // Más código
+            
+          // Checamos el valor de la temperatura promedio
+          if (tempPromedio < 36.5) { 
+            return "Hipotermia" ; 
+          } 
+            else if (tempPromedio> 36.5 && tempPromedio <= 37.4) {
+                 return "Normal" ; 
+            } else if (tempPromedio>= 37.5 && tempPromedio <= 39.9) { return "Hipertermia" ; } else {
+              return "Hiperpirexia" ; 
+            }
+            </code></pre>
+          </div>
+
+          <div class="image-container">
+            <img src="\assets\Valoresfrontera.png" alt="Tabla de análisis de valores frontera para temperaturas"
+              class="content-image">
+          </div>
         </div>
-        <pre><code>
-                        for (int temp : arrTemperaturas) {
-                            if (temp < 30 || temp > 45) {
-                                throw new RuntimeException("EL VALOR " + temp + " NO ES CORRECTO");
-                            }
-                        }
-              
-                        // Más código
-              
-                        // Checamos el valor de la temperatura promedio
-                        if (tempPromedio < 36.5) {
-                            return "Hipotermia";
-                        } else if (tempPromedio > 36.5 && tempPromedio <= 37.4) {
-                            return "Normal";
-                        } else if (tempPromedio >= 37.5 && tempPromedio <= 39.9) {
-                            return "Hipertermia";
-                        } else {
-                            return "Hiperpirexia";
-              }
-        </code></pre>
-        <div class="temperature-table-container">
-          <img src="\assets\Valoresfrontera.png" alt="Tabla de temperaturas" class="temperature-table-img">
-        </div>
-      </div>
+      </section>
+    </article>
 
-    </div>
-
-
-
-
-    <!-- Container for the right section -->
-    <div class="right">
-      <div class="title">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <header class="sidebar-header">
         <h2>Cargando noticias...</h2>
-      </div>
-      <div class="topNews">
+      </header>
+      <div class="news-container">
         <!-- News articles will be dynamically loaded here -->
       </div>
-    </div>
-  </div>
-
+    </aside>
+  </main>
+  
+  
   <script src="/js/breaking-news.js"></script>
 
   <!-- Footer -->

@@ -18,7 +18,7 @@ async function fetchNewsHeadlines() {
 }
 
 function displayNewsFromJSON(newsData) {
-    const rightSection = document.querySelector('.topHeadlines .right');
+    const rightSection = document.querySelector('.sidebar .sidebar-header');
     
     if (!rightSection) {
         console.error('Right section not found');
@@ -28,10 +28,10 @@ function displayNewsFromJSON(newsData) {
     const newsItems = newsData.slice(0, 4);
     
     rightSection.innerHTML = `
-        <div class="title">
+        <div class="sidebar-header">
             <h2>Noticias</h2>
         </div>
-        <div class="topNews">
+        <div class="news-container">
             ${newsItems.map((item, index) => {
                 const newsItem = item.stories ? item.stories[0] : item;
 
