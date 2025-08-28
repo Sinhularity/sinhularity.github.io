@@ -330,10 +330,21 @@ body {
     color: #5e86d6;
 }
 
+
 .news-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.news-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.news-link:hover .news {
+    transform: translateY(-2px);
 }
 
 .news-container .news {
@@ -359,16 +370,6 @@ body {
     padding: 0;
     text-align: center;
     border: none;
-}
-
-.news-container .news .text .title a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.news-container .news .text .title a:hover {
-    color: #b9ebde;
 }
 
 /* Temperature Table Image Styling */

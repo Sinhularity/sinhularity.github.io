@@ -42,19 +42,21 @@ function displayNewsFromJSON(newsData) {
                 const date = newsItem.date || '';
                 
                 return `
-                    <div class="news" id="news-${index + 1}">
-                        <div class="img" id="news-${index + 1}-img">
-                            ${thumbnail ? (`<img src="${thumbnail}" alt="${title}">`) : ''}
-                        </div>
-                        <div class="text" id="news-${index + 1}-text">
-                            <div class="title">
-                                <a href="${link}" target="_blank">${title}</a>
+                    <a href="${link}" target="_blank" class="news-link">
+                        <div class="news" id="news-${index + 1}">
+                            <div class="img" id="news-${index + 1}-img">
+                                ${thumbnail ? (`<img src="${thumbnail}" alt="${title}">`) : ''}
                             </div>
-                            <div class="source">
-                                <small>${source}${date ? ` - ${formatDate(date)}` : ''}</small>
+                            <div class="text" id="news-${index + 1}-text">
+                                <div class="title">
+                                    ${title}
+                                </div>
+                                <div class="source">
+                                    <small>${source}${date ? ` - ${formatDate(date)}` : ''}</small>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 `;
             }).join('')}
         </div>
